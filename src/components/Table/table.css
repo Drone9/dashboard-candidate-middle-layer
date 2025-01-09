@@ -1,0 +1,122 @@
+
+.list-body {
+    height: 73vh;
+    width: 100%;
+    overflow-y: auto;
+    margin-top: 15px !important;
+}
+
+@media (max-width:1280px) {
+    .list-body {
+        height: 50vh !important;
+    }
+}
+
+@media (max-width:1600px) {
+    .list-body {
+        height: 64vh !important;
+    }
+}
+
+@media (max-width:1780px) {
+    .list-body {
+        height: 68vh;
+    }
+}
+
+.list-body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.list-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.list-body::-webkit-scrollbar-thumb {
+    background: #cecece;
+}
+
+.list-body::-webkit-scrollbar-thumb:hover {
+    background: #8d979f;
+}
+
+.list-body .table-body .avatar {
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.list-body .table-body .status {
+    display: block;
+    margin: auto 0px auto 7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+}
+
+.list-body .custom-table th {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    fill: var(--bluecolor) !important;
+    border: none;
+    white-space: nowrap;
+}
+
+.list-body .custom-table th:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.list-body .custom-table .heading-container {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.list-body .custom-table td {
+    vertical-align: middle;
+    border: none;
+    font-size: 13px;
+}
+
+.list-body .custom-table tr {
+    border-bottom: 1px solid rgba(183, 197, 209, 0.2);
+    text-align: start;
+    cursor: pointer;
+}
+
+.list-body .custom-table tbody tr td span {
+    padding-left: 8px;
+}
+
+.header-row {
+    background-color: rgba(0, 135, 253, 0.05);
+    height: 40px;
+}
+
+.result-count-container {
+    position: relative;
+}
+
+.result-count-container .result-count {
+    text-align: right;
+    margin: 10px 0px 0px;
+    font-size: 16px;
+}
+
+.no-data-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.no-data-found p {
+    font-size: 19px;
+    margin-top: 15px;
+}
