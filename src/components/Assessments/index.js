@@ -52,7 +52,7 @@ const Assessments = () => {
       heading:'link',
       accessor:'end_at',
       Cell:({row}) =><div>
-        <a href={`https://candidate.mereos.eu/registration/${row.id}?first_name="John"&last_name="Doe"&email="john.doe@example.com"`} target='_blank' >Assessment Link</a>
+        <a href={`https://candidate.mereos.eu/registration/${row.id}?first_name=John&last_name=Doe&email=john.doe@example.com`} rel="noopener noreferrer" target='_blank' >Assessment Link</a>
       </div>
     },
   ]
